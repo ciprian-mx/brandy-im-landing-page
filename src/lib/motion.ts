@@ -5,19 +5,19 @@ import { motion, type Variants } from 'framer-motion';
 // Spring configurations for different types of animations
 export const SPRING_CONFIGS = {
   gentle: {
-    type: "spring",
+    type: "spring" as const,
     stiffness: 120,
     damping: 20,
     mass: 1
   },
   snappy: {
-    type: "spring",
+    type: "spring" as const,
     stiffness: 300,
     damping: 20,
     mass: 1
   },
   slow: {
-    type: "spring",
+    type: "spring" as const,
     stiffness: 50,
     damping: 15,
     mass: 1
